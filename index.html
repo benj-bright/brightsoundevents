@@ -140,8 +140,23 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-4">What Our Clients Say</h2>
                 <p class="text-xl text-gray-300">Don't just take our word for it - hear from our satisfied clients</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+            <div class="reviews-carousel overflow-hidden relative">
+                <!-- Left Arrow -->
+                <button class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600 hover:bg-purple-700 text-white rounded-full p-3 shadow-lg transition-colors duration-200" id="prevBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <!-- Right Arrow -->
+                <button class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600 hover:bg-purple-700 text-white rounded-full p-3 shadow-lg transition-colors duration-200" id="nextBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <div class="reviews-container flex transition-transform duration-1000 ease-in-out">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -161,18 +176,18 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-6 italic">"BrightSound Events made our wedding day absolutely perfect! The attention to detail and professional service exceeded all our expectations. The sound and lighting were incredible."</p>
+                    <p class="text-gray-300 mb-6 italic">"Ben was one of the best DJ's I have ever come across. He listened to our needs, set up with no disruption to the party.<br>He got everyone engaged and much fun was had by all.<br>He even managed to get people up to do Karaoke who would normally not have done this.<br>I would recommend him without hesitation."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold text-lg">S</span>
+                            <span class="text-white font-bold text-lg">V</span>
                         </div>
                         <div>
-                            <h4 class="text-purple-400 font-semibold">Sarah & James</h4>
-                            <p class="text-gray-400 text-sm">Wedding Couple</p>
+                            <h4 class="text-purple-400 font-semibold">Vicki K</h4>
+                            <p class="text-gray-400 text-sm">Party Host</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -192,18 +207,21 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-6 italic">"The team at BrightSound Events transformed our corporate conference into an engaging and professional experience. Their technical expertise and attention to detail were outstanding."</p>
+                    <p class="text-gray-300 mb-6 italic">"Excellent communication throughout, not one thing I could fault. It was for my 21st birthday with a mixture of family and friends and he catered to everyone with the music. Prior to arrival he asked for some requests and he was able to make a whole playlist just off the vibe from my suggestions.<br>Everyone loved the music and had an amazing night! His set up was fab as well. Would 100% recommend!!!"</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
                             <span class="text-white font-bold text-lg">M</span>
                         </div>
                         <div>
-                            <h4 class="text-purple-400 font-semibold">Michael Chen</h4>
-                            <p class="text-gray-400 text-sm">Corporate Event Manager</p>
+                            <h4 class="text-purple-400 font-semibold">Mollie B</h4>
+                            <p class="text-gray-400 text-sm">21st Birthday Client</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+
+
+
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -223,16 +241,112 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-6 italic">"From the initial planning to the final execution, BrightSound Events delivered an exceptional birthday celebration. The lighting and sound created the perfect atmosphere for our special day."</p>
+                    <p class="text-gray-300 mb-6 italic">"I cannot recommend Ben and Bright Disco enough .. The service was exceptional and such amazing value for money. He made sure he got a play list from us and understood exactly how we wanted the event to run.<br>He was early setting up at the event, worked seemlesly with the band and played the best mix of music. He had our guests on the dance floor all night and when the time came to stop...the crowd were cheering him to play one more !!!"</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold text-lg">E</span>
+                            <span class="text-white font-bold text-lg">S</span>
                         </div>
                         <div>
-                            <h4 class="text-purple-400 font-semibold">Emma Rodriguez</h4>
-                            <p class="text-gray-400 text-sm">Birthday Party Host</p>
+                            <h4 class="text-purple-400 font-semibold">Sarah D</h4>
+                            <p class="text-gray-400 text-sm">Event Client</p>
                         </div>
                     </div>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-purple-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Exactly what we were looking for, Ben was great and really easy to deal with. Would definitely recommend and would use again.<br>Turned up on time and was a pleasure to have and great value."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">D</span>
+                        </div>
+                        <div>
+                            <h4 class="text-purple-400 font-semibold">Daniel C</h4>
+                            <p class="text-gray-400 text-sm">Event Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-purple-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Ben was fantastic, listened to the type of music required. Read the party goers really well and adapted the music to suit. The dance floor was never empty.<br>I would highly recommend Bright Discos, they are polite, punctual and professional. I can't praise enough, we had a great night."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">T</span>
+                        </div>
+                        <div>
+                            <h4 class="text-purple-400 font-semibold">Tracy T</h4>
+                            <p class="text-gray-400 text-sm">Event Client</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cara M Review -->
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-purple-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">"Ben was prompt and arrived and set up all on time. Communication was great through our booking process.<br>Played all the required music. Highly recommend. Thank you Ben"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">C</span>
+                        </div>
+                        <div>
+                            <h4 class="text-purple-400 font-semibold">Cara M</h4>
+                            <p class="text-gray-400 text-sm">Event Client</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -331,6 +445,75 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+
+        // Auto-scrolling reviews carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const reviewsContainer = document.querySelector('.reviews-container');
+            const reviews = document.querySelectorAll('.reviews-container > div');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+            const totalReviews = reviews.length;
+            const reviewsPerView = 3;
+            const maxIndex = totalReviews - reviewsPerView;
+            let autoScrollInterval;
+
+            function updateCarousel() {
+                const translateX = -(currentIndex * (100 / reviewsPerView));
+                reviewsContainer.style.transform = `translateX(${translateX}%)`;
+            }
+
+            function scrollToNext() {
+                if (currentIndex >= maxIndex) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+                updateCarousel();
+            }
+
+            function scrollToPrev() {
+                if (currentIndex <= 0) {
+                    currentIndex = maxIndex;
+                } else {
+                    currentIndex--;
+                }
+                updateCarousel();
+            }
+
+            function startAutoScroll() {
+                autoScrollInterval = setInterval(scrollToNext, 8000); // 8 seconds
+            }
+
+            function stopAutoScroll() {
+                if (autoScrollInterval) {
+                    clearInterval(autoScrollInterval);
+                }
+            }
+
+            function restartAutoScroll() {
+                stopAutoScroll();
+                startAutoScroll();
+            }
+
+            // Event listeners for manual navigation
+            nextBtn.addEventListener('click', function() {
+                scrollToNext();
+                restartAutoScroll();
+            });
+
+            prevBtn.addEventListener('click', function() {
+                scrollToPrev();
+                restartAutoScroll();
+            });
+
+            // Pause auto-scroll on hover
+            reviewsContainer.addEventListener('mouseenter', stopAutoScroll);
+            reviewsContainer.addEventListener('mouseleave', startAutoScroll);
+
+            // Start auto-scroll
+            startAutoScroll();
         });
     </script>
 </body>
