@@ -17,7 +17,6 @@
                 </div>
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-gray-300 hover:text-purple-400">About Us</a>
                     <a href="#services" class="text-gray-300 hover:text-purple-400">Services</a>
                     <a href="#reviews" class="text-gray-300 hover:text-purple-400">Reviews</a>
                     <a href="#gallery" class="text-gray-300 hover:text-purple-400">Gallery</a>
@@ -35,7 +34,6 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-gray-700">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">About Us</a>
                     <a href="#services" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Services</a>
                     <a href="#reviews" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Reviews</a>
                     <a href="#gallery" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Gallery</a>
@@ -58,53 +56,37 @@
                 </p>
             </div>
         </div>
-    </section>
+        </section>
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-gray-950">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-6">About BrightSound Events</h2>
-                    <p class="text-lg text-gray-300 mb-6">
-                        With over 10 years of experience, we've helped hundreds of clients create memorable moments. Our team is dedicated to bringing your vision to life.
-                    </p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-400">500+</div>
-                            <div class="text-gray-300">Events Completed</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-500">98%</div>
-                            <div class="text-gray-300">Client Satisfaction</div>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">Why Choose Us?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">Professional, reliable and affordable service</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">Packages available catering to all events</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">Full public liability insurance and electrical safety (PAT) compliant</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="relative bg-gray-900 rounded-lg p-8 shadow-lg overflow-hidden">
-                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('aboutusbg.jpeg'); filter: blur(4px); opacity: 0.3;"></div>
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-bold text-purple-400 mb-4">Why Choose Us?</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-300">Professional, reliable and affordable service</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-300">Packages available catering to all events</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-6 h-6 text-purple-400 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <span class="text-gray-300">Full public liability insurance and electrical safety (PAT) compliant</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg overflow-hidden">
+                    <img src="whychooseuspic.jpg" alt="Why Choose Us" class="w-full h-auto rounded-lg">
                 </div>
             </div>
         </div>
