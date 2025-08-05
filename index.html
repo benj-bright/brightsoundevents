@@ -14,12 +14,31 @@
                 <div class="flex items-center">
                     <h1 class="text-2xl font-bold text-purple-400">BrightSound Events</h1>
                 </div>
+                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="text-gray-300 hover:text-purple-400">Home</a>
                     <a href="#services" class="text-gray-300 hover:text-purple-400">Services</a>
                     <a href="#about" class="text-gray-300 hover:text-purple-400">About</a>
                     <a href="#reviews" class="text-gray-300 hover:text-purple-400">Reviews</a>
                     <a href="#contact" class="text-gray-300 hover:text-purple-400">Contact</a>
+                </div>
+                <!-- Mobile Navigation -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-purple-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-gray-700">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Home</a>
+                    <a href="#services" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Services</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">About</a>
+                    <a href="#reviews" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Reviews</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-purple-400 hover:bg-gray-800 rounded-md">Contact</a>
                 </div>
             </div>
         </div>
@@ -142,21 +161,21 @@
             </div>
             <div class="reviews-carousel overflow-hidden relative">
                                            <!-- Left Arrow -->
-                           <button class="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600/80 hover:bg-purple-700 text-white rounded-full p-2 shadow-lg transition-colors duration-200" id="prevBtn">
+                           <button class="absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600/30 hover:bg-purple-600/50 text-white rounded-full p-2 shadow-lg transition-colors duration-200 backdrop-blur-sm" id="prevBtn">
                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                                </svg>
                            </button>
                            
                            <!-- Right Arrow -->
-                           <button class="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600/80 hover:bg-purple-700 text-white rounded-full p-2 shadow-lg transition-colors duration-200" id="nextBtn">
+                           <button class="absolute right-2 top-1/2 transform -translate-y-1/2 z-10 bg-purple-600/30 hover:bg-purple-600/50 text-white rounded-full p-2 shadow-lg transition-colors duration-200 backdrop-blur-sm" id="nextBtn">
                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                                </svg>
                            </button>
                 
                 <div class="reviews-container flex transition-transform duration-1000 ease-in-out">
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -187,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -221,7 +240,7 @@
 
 
 
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -252,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -283,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -316,7 +335,7 @@
                 </div>
                 
                 <!-- Cara M Review -->
-                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8">
+                <div class="bg-gray-900 rounded-lg p-8 shadow-lg flex-shrink-0 w-full md:w-1/3 md:mr-8 md:last:mr-0">
                     <div class="flex items-center mb-4">
                         <div class="flex text-purple-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -373,7 +392,7 @@
                             <svg class="w-6 h-6 text-purple-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <span class="text-gray-300">brightsoundevents@outlook.com</span>
+                            <span class="text-gray-300">info@brightsoundevents.co.uk</span>
                         </div>
                         <div class="flex items-center space-x-4 mt-6">
                             <a href="https://facebook.com/brightsoundevents" target="_blank" class="text-purple-400 hover:text-purple-300 transition-colors">
@@ -390,7 +409,7 @@
                     </div>
                 </div>
                 <div>
-                    <form class="space-y-6" action="mailto:brightsoundevents@outlook.com" method="post" enctype="text/plain">
+                    <form class="space-y-6" action="mailto:info@brightsoundevents.co.uk" method="post" enctype="text/plain">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
                             <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
@@ -400,12 +419,12 @@
                             <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
                         </div>
                         <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
-                            <input type="text" id="subject" name="subject" value="New Contact Form Submission" class="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
+                            <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Event Type</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400">
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400"></textarea>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Event Details</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-3 py-3 border border-gray-700 bg-gray-800 text-gray-300 rounded-lg focus:ring-2 focus:ring-purple-400 focus:border-purple-400"></textarea>
                         </div>
                         <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg">
                             Send Message
@@ -464,13 +483,28 @@
 
             function getMaxIndex() {
                 const reviewsPerView = getReviewsPerView();
+                // Ensure the last review is fully visible
+                // On desktop, we need to account for the fact that we show 3 reviews at a time
+                // So the max index should allow the last review to be fully visible
                 return Math.max(0, totalReviews - reviewsPerView);
             }
 
             function updateCarousel() {
                 const reviewsPerView = getReviewsPerView();
-                const translateX = -(currentIndex * (100 / reviewsPerView));
-                reviewsContainer.style.transform = `translateX(${translateX}%)`;
+                if (window.innerWidth >= 768) {
+                    // On desktop, each review is 33.333% wide with 2rem margin between them
+                    // We need to account for both the review width and the margin
+                    const itemWidth = 100 / reviewsPerView; // 33.333%
+                    const marginWidth = 2; // 2rem margin (approximately 2% of container width)
+                    const totalItemWidth = itemWidth + marginWidth;
+                    const translateX = -(currentIndex * totalItemWidth);
+                    reviewsContainer.style.transform = `translateX(${translateX}%)`;
+                } else {
+                    // On mobile, simple calculation
+                    const itemWidth = 100 / reviewsPerView;
+                    const translateX = -(currentIndex * itemWidth);
+                    reviewsContainer.style.transform = `translateX(${translateX}%)`;
+                }
             }
 
             function scrollToNext() {
@@ -534,6 +568,31 @@
 
             // Start auto-scroll
             startAutoScroll();
+        });
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
         });
     </script>
 </body>
