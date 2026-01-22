@@ -57,7 +57,17 @@
 
     <!-- Hero Section -->
     <section class="pt-16 relative text-white overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('mobile-dj-norfolk.jpg'); filter: blur(2px) hue-rotate(180deg) saturate(0.7); opacity: 0.3;"></div>
+        <div class="absolute inset-0 bg-no-repeat hero-bg" style="background-image: url('mobile-dj-norfolk.jpg'); background-size: cover; filter: blur(2px) hue-rotate(180deg) saturate(0.7); opacity: 0.3;"></div>
+        <style>
+            .hero-bg {
+                background-position: center;
+            }
+            @media (min-width: 768px) {
+                .hero-bg {
+                    background-position: center 80% !important;
+                }
+            }
+        </style>
         <div class="relative z-10 max-w-7xl mx-auto px-4 py-7">
             <div class="text-center">
                 <h1 class="text-4xl md:text-5xl font-bold mb-3">
