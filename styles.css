@@ -514,6 +514,10 @@ textarea {
   .services-page .service-bg-card {
     min-height: 235px;
   }
+
+  .lymphoedema-layout .lymphoedema-media {
+    order: -1;
+  }
 }
 
 .contact-whatsapp-card {
@@ -823,6 +827,11 @@ textarea {
   max-height: 340px;
   object-fit: cover;
   object-position: center;
+}
+
+.home-testimonials-section {
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
 }
 
 .lymphoedema-media {

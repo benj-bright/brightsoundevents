@@ -9,6 +9,10 @@ if (menuToggle && navLinks) {
 
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
+      // Keep menu open when tapping Services on mobile so submenu can expand immediately.
+      if (window.innerWidth < 760 && link.classList.contains("services-parent-link")) {
+        return;
+      }
       navLinks.classList.remove("open");
       menuToggle.setAttribute("aria-expanded", "false");
     });
